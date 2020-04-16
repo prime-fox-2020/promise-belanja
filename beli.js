@@ -5,11 +5,11 @@ const beli = (uang, obj) => {
     setTimeout(() => {
       if (uang <= 0) reject("Uangnya mana mak?")
       if (kembalian >= 0) {
-        console.log(`Saya sudah membeli ${obj.item} uang kembaliannya ${kembalian}`);
-        resolve(kembalian)
+        console.log();
+        resolve({ kembalian, message: `Saya sudah membeli ${obj.item} uang kembaliannya ${kembalian}`})
       } else {
-        console.log(`uang gk cukup nih buat beli ${obj.item} kembaliannya cuma ${kembalian}`);
-        resolve(uang)
+        console.log();
+        resolve({ kembalian: uang, message: `uang gk cukup nih buat beli ${obj.item} kembaliannya cuma ${kembalian}`})
       }
     }, obj.waktu);
   })
