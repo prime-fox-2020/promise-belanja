@@ -34,3 +34,15 @@ beli(uang, belanja1)
 .catch((err) => {
   console.log(err)
 })
+
+// beli(uang, belanja1, (kembalian) => {
+//   beli(uang, belanja2, (kembalian) => {
+//       beli(uang, belanja3, (kembalian) => {
+//           beli(uang, belanja4, (kembalian) => {
+//               beli(uang, belanja5, (kembalian) => {
+//                   console.log("selesai")
+//               })
+//           })
+//       })
+//   })
+// })
