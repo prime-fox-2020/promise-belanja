@@ -13,7 +13,7 @@ let martabak = new Food('martabak', 10000, 1000)
 let mie = new Food('mie', 7500, 600)
 let bakso = new Food('bakso', 8000, 400)
 
-beli(50000, bakwan)
+beli(25000, bakwan)
     .then((uang) => {
         return beli(uang, tahu)
     })
@@ -29,6 +29,6 @@ beli(50000, bakwan)
     .then(()=>{
         console.log(`Semua barang sudah dibeli`);
     })
-    .catch((uang) => {
-        console.log(`uang kurang ${uang}`);
+    .catch(() => {
+        console.log(`uang kurang`);
     })
