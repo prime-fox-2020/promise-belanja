@@ -4,7 +4,8 @@ function beli(uang, obj){
     let kembalian = uang - obj.harga
     setTimeout(function(){
       if (kembalian > 0) {
-        resolve([`Saya sudah membeli ${obj.item} uang kembaliannya ${kembalian}`, kembalian])
+        console.log(`Saya sudah membeli ${obj.item} uang kembaliannya ${kembalian}`)
+        resolve(kembalian)
       }else{
         reject(`uang gk cukup nih buat beli ${obj.item} kembaliannya cuma ${kembalian}`);
       }

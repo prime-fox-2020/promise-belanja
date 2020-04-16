@@ -15,24 +15,20 @@ let nasi = new Item('nasi', 6000, 2000)
 let lauk = new Item('lauk', 7000, 4000)
 
 beli(20000, permen)
-.then( (msg) => {
-    console.log(msg[0])
-    return beli(msg[1], roti)
+.then( (uang) => {
+    return beli(uang, roti)
 })
-.then( (msg) => {
-    console.log(msg[0])
-    return beli(msg[1], snack)
+.then( (uang) => {
+    return beli(uang, snack)
 })
-.then( (msg) => {
-    console.log(msg[0])
-    return beli(msg[1], nasi)
+.then( (uang) => {
+    return beli(uang, nasi)
 })
-.then( (msg) => {
-    console.log(msg[0])
-    return beli(msg[1], lauk)
+.then( (uang) => {
+    return beli(uang, lauk)
 })
-.then( (msg) => {
-    console.log(msg[0])
+.then( (uang) => {
+    console.log(uang)
 })
 .catch( (emsg) => {
     console.log(emsg)
