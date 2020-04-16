@@ -8,7 +8,7 @@ class Barang {
     }
 }
 
-let uang = 62000
+let uang = 100000
 let permen = new Barang('Permen', 2000, 1000)
 let roti = new Barang('Roti', 5000, 1000)
 let beras = new Barang('Beras', 25000, 3000)
