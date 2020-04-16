@@ -14,7 +14,7 @@ let snack = new Item('snack', 5000, 2000)
 let nasi = new Item('nasi', 6000, 2000)
 let lauk = new Item('lauk', 7000, 4000)
 
-beli(20000, permen)
+beli(25000, permen)
 .then( (uang) => {
     return beli(uang, roti)
 })
@@ -27,8 +27,7 @@ beli(20000, permen)
 .then( (uang) => {
     return beli(uang, lauk)
 })
-.then( (uang) => {
-    console.log(uang)
+.then( () => {
 })
 .catch( (emsg) => {
     console.log(emsg)
